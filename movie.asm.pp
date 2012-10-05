@@ -3,8 +3,11 @@
     org $2000
     ; Digital sound via Pulse Width Modulation per phaeron's side movie demo:
     ; http://www.atariage.com/forums/topic/200051-need-help-with-ide-hardware/
-    ; Mode E PAL Blending per popmilo:
+    ; Mode E PAL Blending per popmilo / flashjazzcat:
     ; http://www.atariage.com/forums/topic/197450-mode-15-pal-blending/#entry2609821
+    ; Flicker per XL-Paint Max Preview demo
+    ; http://atari.fandal.cz/detail.php?files_id=6627
+    ; http://www.atariage.com/forums/topic/197450-mode-15-pal-blending/page__st__50#entry2612286
 init
     sei
     lda #0
