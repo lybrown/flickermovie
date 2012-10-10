@@ -107,7 +107,7 @@ blank
     sty $80
     rts
 freeze
-    jsr showframe0
+    jsr showframe1
     jmp freeze
 bitmap equ [$4000+$10]
 audio equ [bitmap+240*40+16]
@@ -128,12 +128,12 @@ dlist
 >>> print "   ins '",(shift @frames),"'\n";
     org audio
 >>> print "   ins '$ENV{movie}.$ENV{audext}',",$count++,"*312,312\n";
-    ini showframe1
+    ini showframe0
     org bitmap
 >>> print "   ins '",(shift @frames),"'\n";
     org audio
 >>> print "   ins '$ENV{movie}.$ENV{audext}',",$count++,"*312,312\n";
-    ini showframe0
+    ini showframe1
 >>> }
     org audio
     ift pwm
